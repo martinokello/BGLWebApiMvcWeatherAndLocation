@@ -48,9 +48,8 @@ namespace BLGWeather.Web.Tests
         {
             var result = requests.GetLocationWeather(baseUrl,new Location { CityName="London", CountryCode="UK"}).ConfigureAwait(true).GetAwaiter().GetResult();
             Assert.IsNotNull(result);
-
-            Assert.AreEqual(result.Location.CityName.ToLower(),"London".ToLower());
             Assert.IsNotNull(result.Location.CityName);
+            Assert.AreEqual(result.Location.CityName.ToLower(),"London".ToLower());
         }
     }
 }
