@@ -13,3 +13,4 @@ D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\bin\Debug\BLGWeat
 D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.csproj.CoreCompileInputs.cache
 D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.dll
 D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.pdb
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.csproj.AssemblyReference.cache

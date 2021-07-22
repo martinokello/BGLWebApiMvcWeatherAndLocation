@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLGWeather.Web.Tests", "BLG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLG.Business", "BLG.Business\BLG.Business.csproj", "{5BAB9768-3FC8-43F9-8FE6-B5DF3CCFA2DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLGWeather.Web", "..\BLGWeather.Web\BLGWeather.Web.csproj", "{B09094C7-9667-48B4-A367-E583EDCB234A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5BAB9768-3FC8-43F9-8FE6-B5DF3CCFA2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BAB9768-3FC8-43F9-8FE6-B5DF3CCFA2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BAB9768-3FC8-43F9-8FE6-B5DF3CCFA2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09094C7-9667-48B4-A367-E583EDCB234A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09094C7-9667-48B4-A367-E583EDCB234A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09094C7-9667-48B4-A367-E583EDCB234A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09094C7-9667-48B4-A367-E583EDCB234A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
