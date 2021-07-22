@@ -57,7 +57,11 @@
                     $('div#results').append(div)
                 },
                 error: function (error) {
-                    alert(error)
+                    if (error.responseJSON.Message)
+                    {
+                        alert(error.responseJSON.Message);
+                    }
+                    else alert(error.statusCode+": "+error.statusText);
                 }
             })
         });
