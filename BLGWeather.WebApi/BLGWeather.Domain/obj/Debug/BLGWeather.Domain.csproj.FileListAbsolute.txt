@@ -1,0 +1,15 @@
+C:\Development\BLGWeather.Web\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.dll
+C:\Development\BLGWeather.Web\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.pdb
+C:\Development\BLGWeather.Web\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.csproj.CoreCompileInputs.cache
+C:\Development\BLGWeather.Web\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.dll
+C:\Development\BLGWeather.Web\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.pdb
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.dll
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.pdb
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.csproj.CoreCompileInputs.cache
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.dll
+C:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.pdb
+D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.dll
+D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\bin\Debug\BLGWeather.Domain.pdb
+D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.csproj.CoreCompileInputs.cache
+D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.dll
+D:\Development\BLGTechTest\BLGWeather.WebApi\BLGWeather.Domain\obj\Debug\BLGWeather.Domain.pdb

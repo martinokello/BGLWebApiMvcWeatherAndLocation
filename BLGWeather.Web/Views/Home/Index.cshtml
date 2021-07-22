@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="container">
+    @using(Html.BeginForm()){
+    <div class="jumbotron">
+        <h1>ASP.NET MVC, WebAPI Solution</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Enter Location and Country Code Separated by comma, To Get Weather Elements</h2>
+            <div class="row">
+                <span class="col-lg-offset-1">&nbsp;</span>
+                @Html.TextBox("locationAndCountryCode", "", new { @class = "col-lg-6", @id = "locationAndCountryCode"})
+                <span class="col-lg-offset-1">&nbsp;</span>
+                <input class="btn-primary col-lg-2" value="Submit" id="submitBtn" />
+            </div>
+            <div class="row"><span class="col-lg-offset-1"><hr class="col-lg-9" /></span></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <span class="col-lg-offset-1">&nbsp;</span>
+            <div id="results" class="col-lg-12">
+                <div id="content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input#submitBtn").click(function () {
+            var txt = $('input#locationAndCountryCode').val();
+            var locationElems = txt.split(",");
+            if (locationElems.length < 2) {
+                alert("You need at least city followed by Country Code e.g. London,UK");
+                return;
+            }
+            let reqUrl = 'https://localhost:44323/api/LocationWeather/GetLocationWeather/' + locationElems[0] + '/' + locationElems[1];
+            $.ajax({
+                http: "GET",
+                url: reqUrl,
+                contentType: "application/json",
+                success: function (data) {
+                    $('div#results').remove('div#content');
+                    var div = document.createElement('div');
+                    $(div).attr('id', 'content');
+                    $(div).append('<div>City Name: ' + data.Location.CityName + '</div>');
+                    $(div).append('<div>City Curr Temp: ' + data.Temperature.CurrentTemperature + '</div>');
+                    $(div).append('<div>City Max Temp: ' + data.Temperature.MaximumTemperature + '</div>');
+                    $(div).append('<div>City Min Temp: ' + data.Temperature.MinmumTemperature + '</div>');
+                    $(div).append('<div>City Pressure: ' + data.Pressure + '</div>');
+                    $(div).append('<div>City Humidity: ' + data.Humidity + '</div>');
+                    $(div).append('<div>Time Sunrise: ' + new Date(data.Sunrise).toUTCString() + '</div>');
+                    $(div).append('<div>Time Sunset: ' + new Date(data.Sunset).toUTCString() + '</div>');
+                    $('div#results').append(div)
+                },
+                error: function (error) {
+                    alert(error)
+                }
+            })
+        });
+    });
+</script>
